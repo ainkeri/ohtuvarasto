@@ -69,7 +69,7 @@ class TestVarasto(unittest.TestCase):
     def test_lisatty_maara_pienempaa_kuin_nolla(self):
         self.varasto.lisaa_varastoon(-1)
 
-        self.assertAlmostEqual(self.varasto.saldo, 300)
+        self.assertAlmostEqual(self.varasto.saldo, 0.0)
     
     def test_str(self):
         objekti = Varasto(10, alku_saldo=0)
